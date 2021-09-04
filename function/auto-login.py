@@ -2,7 +2,7 @@ import time
 from selenium import webdriver
 
 driver = webdriver.Chrome() # WebDriverのインスタンスを作成
-driver.get(r'file:///C:\Users\subar\Desktop\新しいフォルダー\auto-manegement\site\index.html') # URLを指定してブラウザを開く
+driver.get('http://127.0.0.1:5000/') # URLを指定してブラウザを開く
 time.sleep(2) # 2秒待機
 driver. find_element_by_xpath("//input[@id = 'username']").send_keys('三木彪瑠')
 time.sleep(1)

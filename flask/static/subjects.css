@@ -2,6 +2,8 @@ body {
   font-size: 15px;
   letter-spacing: .05em;
   color: #333;
+  font-family: 'Covered By Your Grace', cursive,Verdana;
+
 }
 
 a {
@@ -52,16 +54,61 @@ img {
   /* font-weight: bold; */
   line-height: 1.2;
   margin-right: 20px;
-  font-family:Verdana, Geneva, sans-serif;
+  font-family: 'Covered By Your Grace', cursive,Verdana;
 }
 
 .header-logo a {
   color: #333;
   text-decoration: none;
+  font-family: 'Covered By Your Grace', cursive,Verdana;
+
+}
+
+.attendance{
+  text-align: center;
+}
+
+.button{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  padding: 32px 100px 32px 100px;
+  background: none;
+  text-transform: uppercase;
+  font-size: 300%;
+  font-weight: bold;
+  color:#f08080;/*ボタン文字色*/
+  border: 2px solid #333;
+  border-radius: 3em .5em 2em .5em/.4em 2em .5em 3em;
+  cursor: pointer;
+}
+.button:before,
+.button::after {
+  border-radius: 4px;
+  box-shadow: 0 1px 4px #ffced0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.button::before {
+  background-color: #FDCFDF;
+  left: 0;
+  top: 4px;
+  z-index: -1;
+}
+.button::after {
+  background-color: #ffced0;
+  top: 5px;
+  left: 5px;
+  z-index: -2;
 }
 
 .classtimes {
   font-size: 40px;
+  font-family: 'Covered By Your Grace', cursive,Verdana;
   margin-top: 70px;
   margin-left: 3%;
 }
@@ -71,4 +118,9 @@ img {
   height: 50px;
   float: right;
   margin-right: 3%;
+  cursor: pointer;
+}
+
+footer {
+  height: 80px;
 }

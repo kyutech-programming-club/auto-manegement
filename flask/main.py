@@ -15,8 +15,9 @@ class User(UserMixin):
 
 # ログイン用ユーザー作成
 users = {
-    1: User(1, "三木彪流", "mikitakeru"),
-    2: User(2, "user2", "pass")
+    1: User(1, "三木彪瑠", "mikitakeru"),
+    2: User(2, "松沼韻", "hibiki"),
+    3: User(3, "わんわん","wanwan")
 }
 
 # ユーザーチェックに使用する辞書作成
@@ -39,7 +40,6 @@ def login():
         if(request.form["username"] in user_check and request.form["password"] == user_check[request.form["username"]]["password"]):
             # ユーザーが存在した場合はログイン
             login_user(users.get(user_check[request.form["username"]]["id"]))
-            print(users.get(user_check[request.form["username"]]["id"]))
             return redirect("/home/")
         else:
             return abort(401)
@@ -49,23 +49,29 @@ def login():
 @app.route('/home/')
 @login_required
 def home():
-    return render_template("main/dashbord.html")
+    name = i.name
+    return render_template("main/dashbord.html", name=name)
 
 @app.route('/subjects')
-def buturi():
-    return render_template('main/subjects/buturi.html')
+def butsuri():
+    return render_template('main/subjects/butsuri.html')
+
 @app.route('/subjects')
 def denjiki():
     return render_template('main/subjects/denjiki.html')
+
 @app.route('/subjects')
 def denkikairo():
     return render_template('main/subjects/denkikairo.html')
+
 @app.route('/subjects')
 def densikairo():
     return render_template('main/subjects/densikairo.html')
+
 @app.route('/subjects')
 def muki():
     return render_template('main/subjects/muki.html')
+
 @app.route('/subjects')
 def yuuki():
     return render_template('main/subjects/yuuki.html')
