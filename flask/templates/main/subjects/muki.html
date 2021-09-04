@@ -4,21 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./subjects.css">
-  <title>有機化学Ⅰ</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='subjects.css') }}">
+  <title>無機化学Ⅰ</title>
 </head>
 
 <header class="header">
   <div class="container">
     <h1 class="header-logo">
-      <a href="../dashbord.html">Kyutech Uoodle216(2021) on Proken</a>
+      <a href="{{ url_for('home') }}">Kyutech Uoodle216(2021) on Proken</a>
     </h1>
   </div>
 </header>
 
 <body>
   <div class="contents">
-    <h1>有機化学Ⅰ(2021):応用化学コース:前期:木曜日1時限(1)</h1>
+    <h1>無機化学Ⅰ(2021):応用化学コース:Q01:水曜日2時限金曜日1時限(1)</h1>
     <hr>
     <div class="attendance" id="submit-attendance">
       <button onclick="window.alert('出席を確認しました！')">出席</button>

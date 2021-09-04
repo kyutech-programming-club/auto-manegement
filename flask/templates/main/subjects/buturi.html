@@ -4,14 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./subjects.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='subjects.css') }}">
   <title>物理化学Ⅰ</title>
 </head>
 
 <header class="header">
   <div class="container">
     <h1 class="header-logo">
-      <a href="../dashbord.html">Kyutech Uoodle216(2021) on Proken</a>
+      <a href="{{ url_for('home') }}">Kyutech Uoodle216(2021) on Proken</a>
     </h1>
   </div>
 </header>

@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
   <title>だっしゅぼーど</title>
 </head>
 <header class="header">
     <img src="../images/" alt="">
     <div class="container">
       <h1 class="header-logo">
-        <a href="./dashbord.html">Kyutech Uoodle216(2021) on Proken</a>
+        <a href="{{ url_for('home') }}">Kyutech Uoodle216(2021) on Proken</a>
       </h1>
     </div>
 </header>
@@ -20,7 +20,7 @@
     <section class="card">
       <div class="card-item">
         <div class="card-img">
-          <img src="../images/mikisan.png" alt="">
+          <img src="{{ url_for('static', filename='images/mikisan.png') }}" alt="">
         </div>
         <div class="card-content">
           <h1 class="card-title"></h1>
@@ -28,14 +28,14 @@
         </div>
         <div class="card-link-container">
           <div class="card-link">
-            <a href="subjects/denkikairo.html" id="denkikairo">電気回路Ⅰ(2021):電気電子および電気宇宙【03クラス】:Q01:火曜日5時限木曜日4時限(1)</a>
+            <a href="{{ url_for('denkikairo') }}" id="denkikairo">電気回路Ⅰ(2021):電気電子および電気宇宙【03クラス】:Q01:火曜日5時限木曜日4時限(1)</a>
           </div>
         </div>
       </div>
 
       <div class="card-item">
         <div class="card-img">
-          <img src="../images/mikisan.png" alt="">
+          <img src="{{ url_for('static', filename='images/mikisan.png') }}" alt="">
         </div>
         <div class="card-content">
           <h1 class="card-title"></h1>
@@ -43,14 +43,14 @@
         </div>
         <div class="card-link-container">
           <div class="card-link">
-            <a href="subjects/densikairo.html" id="densikairo">電子回路Ⅰ 2021 （電気電子）</a>
+            <a href="{{ url_for('densikairo') }}" id="densikairo">電子回路Ⅰ 2021 （電気電子）</a>
           </div>
         </div>
       </div>
 
       <div class="card-item">
         <div class="card-img">
-          <img src="../images/mikisan.png" alt="">
+          <img src="{{ url_for('static', filename='images/mikisan.png') }}" alt="">
         </div>
         <div class="card-content">
           <h1 class="card-title"></h1>
@@ -58,14 +58,14 @@
         </div>
         <div class="card-link-container">  
           <div class="card-link">
-            <a href="subjects/denjiki.html" id="denjiki">電磁気学Ⅰ(2021):共通:Q01:月曜日4時限木曜日2時限(1)</a>
+            <a href="{{ url_for('denjiki') }}" id="denjiki">電磁気学Ⅰ(2021):共通:Q01:月曜日4時限木曜日2時限(1)</a>
           </div>
         </div>
       </div>
 
       <div class="card-item">
         <div class="card-img">
-          <img src="../images/mikisan.png" alt="">
+          <img src="{{ url_for('static', filename='images/mikisan.png') }}" alt="">
         </div>
         <div class="card-content">
           <h1 class="card-title"></h1>
@@ -73,14 +73,14 @@
         </div>
         <div class="card-link-container">
           <div class="card-link">
-            <a href="subjects/muki.html" id="muki">無機化学Ⅰ(2021):応用化学コース:Q01:水曜日2時限金曜日1時限(1)</a>
+            <a href="{{ url_for('muki') }}" id="muki">無機化学Ⅰ(2021):応用化学コース:Q01:水曜日2時限金曜日1時限(1)</a>
           </div>
         </div>
       </div>
 
       <div class="card-item">
         <div class="card-img">
-          <img src="../images/mikisan.png" alt="">
+          <img src="{{ url_for('static', filename='images/mikisan.png') }}" alt="">
         </div>
         <div class="card-content">
           <h1 class="card-title"></h1>
@@ -88,14 +88,14 @@
         </div>
         <div class="card-link-container">
           <div class="card-link">
-            <a href="subjects/yuuki.html" id="yuuki">有機化学Ⅰ(2021):応用化学コース:前期:木曜日1時限(1)</a>
+            <a href="{{ url_for('yuuki') }}" id="yuuki">有機化学Ⅰ(2021):応用化学コース:前期:木曜日1時限(1)</a>
           </div>
         </div>
       </div>
 
       <div class="card-item">
         <div class="card-img">
-          <img src="../images/mikisan.png" alt="">
+          <img src="{{ url_for('static', filename='images/mikisan.png') }}" alt="">
         </div>
         <div class="card-content">
           <h1 class="card-title"></h1>
@@ -103,7 +103,7 @@
         </div>
         <div class="card-link-container">
           <div class="card-link">
-            <a href="subjects/buturi.html" id="butsuri">物理化学Ⅰ(2021):応用化学コース:Q02:水曜日2時限金曜日1時限(1)</a>
+            <a href="{{ url_for('buturi') }}" id="butsuri">物理化学Ⅰ(2021):応用化学コース:Q02:水曜日2時限金曜日1時限(1)</a>
           </div>
         </div>
       </div>
