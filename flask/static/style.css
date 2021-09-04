@@ -125,7 +125,7 @@ img {
 
 .back{
   position: absolute; z-index:1;
-  background: url(../images/back.png) no-repeat;
+  background: url('/static/images/back.png') no-repeat;
   right: 0;
   bottom: 0;
   background-attachment: fixed;
