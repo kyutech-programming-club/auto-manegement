@@ -15,4 +15,5 @@ time.sleep(2) # 2秒待機
 driver.find_element_by_link_text("電磁気学Ⅰ(2021):共通:Q01:月曜日4時限木曜日2時限(1)").click()
 time.sleep(2)
 driver. find_element_by_xpath("//button[text() = '出席']").click()
+time.sleep(2)
 driver.quit() # ブラウザを閉じる
