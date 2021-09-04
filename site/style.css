@@ -154,11 +154,12 @@ input[type="text"]:focus {
 
 footer {
     color: #ffffff;
-    font-size: 11px;
+    font-size: 15px;
     background: #717171;
 }
 .footer-text {
     margin-bottom: 12px;
+    margin-left: 1%;
 }
 .footer-links a:link,
 .footer-links a:visited {
