@@ -1,12 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ウェブログインサービス</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
+
 <body>
-  
+  <div class="wrapper">
+    <div class="container">
+      <header>
+        <img src="./images/logo.png" alt="Kyutech logo">
+      </header>
+
+      <div class="content">
+        <div class="column one">
+
+
+          <form action="/idp/profile/SAML2/Redirect/SSO?execution=e1s1" method="post">
+
+
+            <div class="form-element-wrapper">
+              <label for="username">ユーザ名</label>
+              <input class="form-element form-field" id="username" name="j_username" type="text" value="">
+            </div>
+
+            <div class="form-element-wrapper">
+              <label for="password">パスワード</label>
+              <input class="form-element form-field" id="password" name="j_password" type="password" value="">
+            </div>
+
+            <div class="form-element-wrapper">
+              <input type="checkbox" name="donotcache" value="1" id="donotcache">
+              <label for="donotcache">ログインを記憶しません。</label>
+            </div>
+
+
+            <div class="form-element-wrapper">
+              <input id="_shib_idp_revokeConsent" type="checkbox" name="_shib_idp_revokeConsent" value="true">
+              <label for="_shib_idp_revokeConsent">このサービスへの属性送信の同意を取り消します。</label>
+            </div>
+
+            <div class="form-element-wrapper">
+              <button class="form-element form-button" type="submit" name="_eventId_proceed">Login</button>
+            </div>
+
+          </form>
+          
+      </div>
+    </div>
+
+    <footer>
+      <div class="container container-footer">
+        <p class="footer-text">idp.idm.kyutech.ac.jp</p>
+      </div>
+    </footer>
+  </div>
+
+
 </body>
+
 </html>
