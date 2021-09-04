@@ -52,27 +52,27 @@ def home():
     name = i.name
     return render_template("main/dashbord.html", name=name)
 
-@app.route('/subjects')
+@app.route('/subjects/butsuri')
 def butsuri():
     return render_template('main/subjects/butsuri.html')
 
-@app.route('/subjects')
+@app.route('/subjects/denjiki')
 def denjiki():
     return render_template('main/subjects/denjiki.html')
 
-@app.route('/subjects')
+@app.route('/subjects/denkikairo')
 def denkikairo():
     return render_template('main/subjects/denkikairo.html')
 
-@app.route('/subjects')
+@app.route('/subjects/densikairo')
 def densikairo():
     return render_template('main/subjects/densikairo.html')
 
-@app.route('/subjects')
+@app.route('/subjects/muki')
 def muki():
     return render_template('main/subjects/muki.html')
 
-@app.route('/subjects')
+@app.route('/subjects/yuuki')
 def yuuki():
     return render_template('main/subjects/yuuki.html')
 
