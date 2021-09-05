@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
 }
+
 header, footer, section, nav {
     display: block;
 }
+
 html, body {
     height: 100%;
 }
+
 body {
     font-family: 'Covered By Your Grace', cursive,Verdana;
     font-size: 12px;
@@ -15,11 +18,13 @@ body {
     color: #717171;
     background: #FBBEDF;
 }
+
 a:link,
 a:visited {
     text-decoration: none;
     color: #FBBEDF;
 }
+
 img {
     max-width: 50%;
     margin-bottom: 12px;
@@ -35,15 +40,17 @@ img {
     width: 540px;
     margin-left: -270px;
 }
+
 .container-footer {
     padding-top: 12px;
-
 }
+
 @media only screen and (max-width: 1020px) {
     .container {
         left: 45%;
     }
 }
+
 @media only screen and (max-width: 650px) {
     .container {
         position: static;
@@ -55,12 +62,12 @@ img {
 header {
     padding: 20px 0;
     display:inline-block;
-
 }
 
 .logo img {
     border: none;
-} 
+}
+
 .header-text{
         font-size: 5em;
 }
@@ -76,7 +83,6 @@ header {
         width: 100px;
         margin: 0 auto;
     }
-   
 }
 
 .content {
@@ -105,10 +111,12 @@ form legend {
     font-family: 'Covered By Your Grace', cursive,Verdana;
     margin-bottom: 12px;
 }
+
 .form-element-wrapper {
     margin-bottom: 12px;
     font-family: 'Covered By Your Grace', cursive,Verdana;
 }
+
 .form-element {
     width: 100%;
     padding: 13px 12px;
@@ -118,6 +126,7 @@ form legend {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
 }
+
 .form-field {
     padding: .75em 4em;
     border: 4px solid #FBBEDF;
@@ -132,6 +141,7 @@ input[type="text"]:focus {
     border-radius: 3em .5em 2em .5em/.4em 2em .5em 3em;
     color: #717171;
 }
+
 .form-button {
     background: #ffffff;
     box-sizing: content-box;
@@ -145,6 +155,7 @@ input[type="text"]:focus {
 .form-button:hover {
     background: #FCA3CC;
 }
+
 .form-error {
     padding: 0;
     color: #B61601;
@@ -154,10 +165,12 @@ input[type="text"]:focus {
     margin-top: 40px; /* offset padding on first anchor */
     list-style: none;
 }
+
 .list-help-item a {
     display: block;
     padding: 6px 0;
 }
+
 .item-marker {
     color: #be0000;
 }

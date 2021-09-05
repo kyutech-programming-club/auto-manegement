@@ -20,8 +20,6 @@ img {
   border-radius: 8px;
 }
 
-
-
 .pc-only {
   display: block;
 }
@@ -59,7 +57,7 @@ img {
 }
 
 .username {
- font-size: 20px;
+  font-size: 20px;
 }
 
 .card {
@@ -87,15 +85,18 @@ img {
   display: flex;
   align-items: center;
 }
+
 .card-content {
   padding: 0px;
 }
+
 .card-title {
   font-size: 20px;
   margin-bottom: 20px;
   text-align: center;
   color: #333;
 }
+
 .card-text {
   color: #777;
   font-size: 14px;
@@ -148,4 +149,3 @@ img {
   text-align: center;
   color: #797979;
 }
-
