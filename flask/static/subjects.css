@@ -1,0 +1,121 @@
+body {
+  font-size: 15px;
+  letter-spacing: .05em;
+  color: #333;
+  font-family: 'Covered By Your Grace', cursive,Verdana;
+
+}
+
+a {
+  transition: opacity .3s;
+  text-decoration: none;
+  color: #1ca9e3;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+  vertical-align: bottom;
+  border-style: none;
+}
+
+.pc-only {
+  display: block;
+}
+
+.sp-only {
+  display: none;
+}
+
+.header {
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 5px 10px -6px rgba(119, 117, 117, 0.137);
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px 20px 40px;
+}
+
+.header-logo {
+  font-size: 20px;
+  /* font-weight: bold; */
+  line-height: 1.2;
+  margin-right: 20px;
+  font-family: 'Covered By Your Grace', cursive,Verdana;
+}
+
+.header-logo a {
+  color: #333;
+  text-decoration: none;
+  font-family: 'Covered By Your Grace', cursive,Verdana;
+
+}
+
+.attendance{
+  text-align: center;
+}
+
+.button{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  padding: 32px 100px 32px 100px;
+  background: none;
+  text-transform: uppercase;
+  font-size: 300%;
+  font-weight: bold;
+  color:#f08080;/*ボタン文字色*/
+  border: 2px solid #333;
+  border-radius: 3em .5em 2em .5em/.4em 2em .5em 3em;
+  cursor: pointer;
+}
+
+.button:before,
+.button::after {
+  border-radius: 4px;
+  box-shadow: 0 1px 4px #ffced0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.button::before {
+  background-color: #FDCFDF;
+  left: 0;
+  top: 4px;
+  z-index: -1;
+}
+.button::after {
+  background-color: #ffced0;
+  top: 5px;
+  left: 5px;
+  z-index: -2;
+}
+
+.classtimes {
+  font-size: 40px;
+  font-family: 'Covered By Your Grace', cursive,Verdana;
+  margin-top: 70px;
+  margin-left: 3%;
+}
+
+.checkbox {
+  width: 50px;
+  height: 50px;
+  float: right;
+  margin-right: 3%;
+  cursor: pointer;
+}
+
+footer {
+  height: 80px;
+}

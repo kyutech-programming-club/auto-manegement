@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+  <title>だっしゅぼーど</title>
+</head>
+
+<header class="header">
+    <div class="container">
+      <h1 class="header-logo">
+        <a href="{{ url_for('home') }}">Kyutech Uoodle216(2021) on Proken</a>
+      </h1>
+      <div class="username">
+        logined by {{ name }}
+      </div>
+    </div>
+</header>
+
+<body>
+  <div>
+    <section class="card">
+
+      <div class="card-item">
+        <div class="card-img">
+          <img src="{{ url_for('static', filename='images/mikisan.png') }}" alt="">
+        </div>
+        <div class="card-content">
+          <h1 class="card-title"></h1>
+          <p class="card-text">共通</p>
+        </div>
+        <div class="card-link-container">
+          <div class="card-link">
+            <a href="{{ url_for('denkikairo') }}" id="denkikairo">電気回路Ⅰ(2021):電気電子および電気宇宙【03クラス】:Q01:火曜日5時限木曜日4時限(1)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-item">
+        <div class="card-img">
+          <img src="{{ url_for('static', filename='images/mikisan.png') }}" alt="">
+        </div>
+        <div class="card-content">
+          <h1 class="card-title"></h1>
+          <p class="card-text">共通</p>
+        </div>
+        <div class="card-link-container">
+          <div class="card-link">
+            <a href="{{ url_for('densikairo') }}" id="densikairo">電子回路Ⅰ 2021 （電気電子）</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-item">
+        <div class="card-img">
+          <img src="{{ url_for('static', filename='images/mikisan.png') }}" alt="">
+        </div>
+        <div class="card-content">
+          <h1 class="card-title"></h1>
+          <p class="card-text">共通</p>
+        </div>
+        <div class="card-link-container">  
+          <div class="card-link">
+            <a href="{{ url_for('denjiki') }}" id="denjiki">電磁気学Ⅰ(2021):共通:Q01:月曜日4時限木曜日2時限(1)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-item">
+        <div class="card-img">
+          <img src="{{ url_for('static', filename='images/mikisan.png') }}" alt="">
+        </div>
+        <div class="card-content">
+          <h1 class="card-title"></h1>
+          <p class="card-text">共通</p>
+        </div>
+        <div class="card-link-container">
+          <div class="card-link">
+            <a href="{{ url_for('muki') }}" id="muki">無機化学Ⅰ(2021):応用化学コース:Q01:水曜日2時限金曜日1時限(1)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-item">
+        <div class="card-img">
+          <img src="{{ url_for('static', filename='images/mikisan.png') }}" alt="">
+        </div>
+        <div class="card-content">
+          <h1 class="card-title"></h1>
+          <p class="card-text">共通</p>
+        </div>
+        <div class="card-link-container">
+          <div class="card-link">
+            <a href="{{ url_for('yuuki') }}" id="yuuki">有機化学Ⅰ(2021):応用化学コース:前期:木曜日1時限(1)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-item">
+        <div class="card-img">
+          <img src="{{ url_for('static', filename='images/mikisan.png') }}" alt="">
+        </div>
+        <div class="card-content">
+          <h1 class="card-title"></h1>
+          <p class="card-text">共通</p>
+        </div>
+        <div class="card-link-container">
+          <div class="card-link">
+            <a href="{{ url_for('butsuri') }}" id="butsuri">物理化学Ⅰ(2021):応用化学コース:Q02:水曜日2時限金曜日1時限(1)</a>
+          </div>
+        </div>
+      </div>
+      
+      <img class="back" src="{{ url_for('static', filename='images/back.png') }}" alt="">
+
+    </section>  
+  </div>
+</body>
+
+<footer class="footer">
+  <div class="copyright">&copy;方向性の違い</div>
+</footer>
+
+</html>
