@@ -140,6 +140,7 @@ input[type="text"]:focus {
     border: 3px solid #FBBEDF;
     border-radius: 3em .5em 2em .5em/.4em 2em .5em 3em;
     color: #717171;
+    outline: none;
 }
 
 .form-button {
