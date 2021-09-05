@@ -4,6 +4,8 @@ from selenium import webdriver
 driver = webdriver.Chrome() # WebDriverのインスタンスを作成
 driver.get('http://127.0.0.1:5000/') # URLを指定してブラウザを開く
 time.sleep(2) # 2秒待機
+driver.maximize_window()
+time.sleep(2)
 driver. find_element_by_xpath("//input[@id = 'username']").send_keys('三木彪瑠')
 time.sleep(1)
 driver. find_element_by_xpath("//input[@id = 'password']").send_keys('mikitakeru')
