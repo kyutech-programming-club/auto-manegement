@@ -26,20 +26,24 @@ user_check = nested_dict()
 for i in users.values():
     user_check[i.name]["password"] = i.password
     user_check[i.name]["id"] = i.id
+    print(i.name)
 
 @login_manager.user_loader
 def load_user(user_id):
     return users.get(int(user_id))
 
 #######################################################
-
+name = ""
 @app.route('/', methods=["GET", "POST"])
 def login():
+    global name
     if(request.method == "POST"):
         # ユーザーチェック
         if(request.form["username"] in user_check and request.form["password"] == user_check[request.form["username"]]["password"]):
             # ユーザーが存在した場合はログイン
             login_user(users.get(user_check[request.form["username"]]["id"]))
+            name = request.form["username"]
+            print(name)
             return redirect("/home/")
         else:
             return abort(401)
@@ -49,7 +53,6 @@ def login():
 @app.route('/home/')
 @login_required
 def home():
-    name = i.name
     return render_template("main/dashbord.html", name=name)
 
 @app.route('/subjects/butsuri')
